@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notification_time_entry">
+        <item>1小时</item>
+        <item>6小时</item>
+        <item>24小时</item>
+    </string-array>
+    <string-array name="notification_time_values">
+        <item>3600</item>
+        <item>21600</item>
+        <item>96400</item>
+    </string-array>
+</resources>

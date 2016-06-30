@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\baidumapapi_util_v3_7_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="72003ec5efa50c2e02266e1ad7ebefaca7d017d6">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_util_v3_7_0_e23edd7cbb2014c2c4cf5099fc4c6e79db3517ff.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.1_98aa35851893b28bc426ccc7e594d6bcc6b5f308.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_059dcc0073405e91e43bc7f41e880fd8cd56ffe0.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\baidumapapi_cloud_v3_7_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6d11ba6426881d142f67c539d8a13d19446ac895">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v3_7_0_70845fff473f0119aa6d44d11d9d0a1183621e68.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\baidumapapi_map_v3_7_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="534f8d224f352bba70229230b79028cab1e7859c">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_map_v3_7_0_055ddcb5a897035144cdcd4c387e7c7c3e126046.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\baidumapapi_base_v3_7_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="18e10945278df7f556e2e336a826b0db965dce51">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_base_v3_7_0_8695d1d79f006c3c378aab4970f2ca9b5aa06eae.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\baidumapapi_radar_v3_7_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="15ca4625795ed40520a94e7ef1aa53791f9e17fe">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_radar_v3_7_0_90047e53b22e226deaa5efbf1a8aeccc88b5055b.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\baidumapapi_search_v3_7_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="934d5f6ca26f082fbe8bf17767caa530e37d1dfa">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\baidumapapi_search_v3_7_0_08d5cf0e03d736fb9603ab17399f182370473bd7.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1_0cdc4a33b632de0dddff7ccafcea974fe0aaa145.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1_9b1152cd0106de87a75acf8729252bcc44bdb1fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="C:\Users\fangc\AndroidStudioProjects\4-LearnFromInternet\BaiduMapsApiASDemo\app\build\intermediates\pre-dexed\debug\locSDK_6.13_56c9d985c10295933a18aaea7008b8eac6881e28.jar" />
+    </item>
+
+</items>

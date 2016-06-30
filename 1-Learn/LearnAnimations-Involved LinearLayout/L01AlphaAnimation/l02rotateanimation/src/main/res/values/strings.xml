@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">L02RotateAnimation</string>
+    <string name="rotate_me">rotate_me</string>
+</resources>

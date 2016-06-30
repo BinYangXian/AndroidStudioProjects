@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!--1、对话框形式的推送时间频率设置-->
+    <PreferenceCategory android:title="设置推送频率">
+        <ListPreference
+            android:title="推送时间"
+            android:key="notification_time"
+            android:defaultValue="1小时"
+            android:dialogTitle="请选择时间"
+            android:entries="@array/notification_time_entry"
+            android:entryValues="@array/notification_time_values"
+            android:negativeButtonText="取消"
+            android:positiveButtonText="确定" />
+        <!-- 这里需要一组数据来供选择列表使用，这里用entryValues;前title与键值对这三个属性是必须的-->
+        <!--entries与entryValues的@array/...的使用-->
+    </PreferenceCategory>
+    <!-- 2、文字保存形式之保存昵称-->
+    <PreferenceCategory android:title="保存昵称">
+        <EditTextPreference
+            android:defaultValue="即可学院"
+            android:key="nikeName"
+            android:title="昵称"/>
+    </PreferenceCategory>
+</PreferenceScreen>

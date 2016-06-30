@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+<!--偏好设置首页-->
+    <header android:fragment="com.jikexueyuan.usingvaluesdirectory.settingsFragment$notificationFragment"
+        android:summary="这是一个通知设置"
+        android:title="通知设置">
+        <extra
+            android:name="notification"
+            android:value="1234"/>
+    </header>
+    <header android:fragment="com.jikexueyuan.usingvaluesdirectory.settingsFragment$notificationTimeFragment"
+        android:summary="推送频率设置"
+        android:title="推送时间设置">
+    </header>
+</preference-headers>

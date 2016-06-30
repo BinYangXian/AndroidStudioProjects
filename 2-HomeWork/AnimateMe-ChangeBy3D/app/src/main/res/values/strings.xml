@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChangeFragment</string>
+    <string name="show_another_fragment">Show another fragment</string>
+</resources>

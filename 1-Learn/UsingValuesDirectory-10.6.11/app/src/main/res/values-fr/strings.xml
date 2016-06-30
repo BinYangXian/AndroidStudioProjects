@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UsingValuesDirectory</string>
+    <string name="hello">Je t\'aime ．</string>
+    <!-- 注意特殊符号需要"\"（转义字符）转化-->
+</resources>

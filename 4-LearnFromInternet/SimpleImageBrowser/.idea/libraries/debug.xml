@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SimpleImageBrowser/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_27bb5b717fe91f8ae8e0341d1c2543d1d82cbc78.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SimpleImageBrowser/app/build/intermediates/pre-dexed/debug/debug_887a8766c7a78e5e8a4a149ac804d81556369992.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SimpleImageBrowser/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_1939deffd21710c35b3a6ad846c59eb0ca56db4d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SimpleImageBrowser/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_dc14f07064331a354eea84518d62f58d8b5e12e6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SimpleImageBrowser/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_dd192f68ae417af9f8a1a7bba16bfb67361755a0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

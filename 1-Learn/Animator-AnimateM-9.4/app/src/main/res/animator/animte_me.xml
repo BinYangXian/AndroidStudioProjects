@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:propertyName="rotation"
+    android:valueFrom="0"
+    android:valueTo="360">
+<!--propertyName的匹配前提是某设置对象有设置这个属性的方法;理论上来讲，属性动画能够移动任何有数字变化的对象，（比如
+我们可以移动属性，从1-100，时常为1000ms，这个操作有可能是不会呈现出来的，但是它确实按上述动作了。-->
+</objectAnimator>

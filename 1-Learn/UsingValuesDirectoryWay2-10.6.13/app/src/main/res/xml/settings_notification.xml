@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="这是标题1"><!--好看的偏好设置分类标签-->
+        <!--默认设置是否要开始通知-->
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:summary="当你进入程序时，是否要开启通知"
+            android:title="是否要开始通知" />
+        <CheckBoxPreference
+            android:key="checkbox_noti2"
+            android:title="通知2" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="这是标题2">
+        <Preference android:title="访问我们">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.jikexueyuan.com" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

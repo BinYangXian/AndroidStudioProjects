@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\fangc\Downloads\PetrolStation1\app\libs\BaiduLBS_Android.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4ca95d0bf14b65f334658108a8d051a4bbdcb94b">
+        <dex dex="C:\Users\fangc\Downloads\PetrolStation1\app\build\intermediates\pre-dexed\debug\BaiduLBS_Android-b3e734022604b7113be562d9f950423b08aef5c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\fangc\Downloads\PetrolStation1\app\libs\juhe_sdk_v_2_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c84128358c965dec01daa23c137dfc1cd65167b7">
+        <dex dex="C:\Users\fangc\Downloads\PetrolStation1\app\build\intermediates\pre-dexed\debug\juhe_sdk_v_2_1-9174598e8536a29ffe7abab69f4fa676543cdef0.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LayoutForBaiduWaimai</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="search">搜索商户或商品名称</string>
+    <string name="eat">餐饮</string>
+    <string name="fruit">鲜果</string>
+    <string name="medicine">药店</string>
+    <string name="newdian">新店</string>
+    <string name="login">登录/注册</string>
+    <string name="info_login">您还没有登录，请登录后查看订单</string>
+    <string name="info">全部商家</string>
+    <string name="qisong">起送¥20｜配送¥5｜平均45分钟</string>
+</resources>

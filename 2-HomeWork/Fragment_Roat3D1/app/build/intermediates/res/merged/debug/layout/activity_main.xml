@@ -1,0 +1,9 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_content">
+
+
+</FrameLayout>
+<!-- From: file:/C:/Users/fangc/AndroidStudioProjects/3-HomeWork/Fragment_Roat3D1/app/src/main/res/layout/activity_main.xml -->

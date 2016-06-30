@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">极客通讯录复习</string>
+    <string name="button_add">添加</string>
+    <string name="number">电话：</string>
+    <string name="name">联系人：</string>
+    <string name="add_title">添加联系人</string>
+    <string name="add_cancel">取消</string>
+    <string name="add_confirm">确定</string>
+    <string name="phone">打电话</string>
+    <string name="send_messages">发短信</string>
+    <string name="choice">请选择</string>
+</resources>

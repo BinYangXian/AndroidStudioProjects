@@ -1,0 +1,14 @@
+一、 服务器：
+1、接受以12345为端口的socket连接；
+2、连接成功后，实时接收各客户端传来其自身的localLocateData（共享位置信息）；
+3、之后马上发送给其余所有已连接的客户端。
+二、客户端：
+1、建立socket通信基础：
+  绑定MyService服务，在其中开启一个线程来链接localhost 12345端口以此作为后续通信；
+2、定位当前位置：
+  定位当前位置为LatLng类型的ll ，定位成功后，在百度地图中显示出来；
+3、自身与其它客户端共享位置信息的发送与接收：
+  同时标记当前客户端的本地定位信息为localLocateData = "[" + socketIndex + ":" + latitude + ":" + longitude + ":" + direction + ":]";（其它客户端可以通过otherSocketIndex来识别当前客户端）；
+  由于MainActivity与service的绑定，可通过socket连接发送localLocateData，同时接收otherLocateData（就之前学过的回调函数法）。
+
+4、otherLocateData的显示：解析otherLocateData为latitude 、longitude、 otherSocketIndex与direction，然后通过百度地图api中的Marker显示出来，并且通过MyLocationListener中的onReceiveLocation方法中的sendData方法，每秒一次地主动发送的共享位置信息，得以实现实时位置共享。

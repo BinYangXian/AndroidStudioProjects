@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\ApiDemos\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw720dp-v13\\resources_smallest_width_row.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\ApiDemos\\app\\src\\main\\res\\layout-sw720dp\\resources_smallest_width_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\ApiDemos\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw720dp-v13\\resources_smallest_width_inner.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\ApiDemos\\app\\src\\main\\res\\layout-sw720dp\\resources_smallest_width_inner.xml"
+    }
+]

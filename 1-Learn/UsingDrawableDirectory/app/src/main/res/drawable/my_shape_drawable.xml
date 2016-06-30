@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="rectangle">   <!-- 矩形（还有其它图形）-->
+    <gradient
+        android:angle="45"
+        android:endColor="#ff6600"
+        android:startColor="#cc0000" />
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" />
+    <corners android:radius="10dp" /><!-- 圆角圆滑度-->
+</shape>

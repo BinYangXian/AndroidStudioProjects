@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- #000分别代表r、g、b（red green blue三色）-->
+    <color name="color1">#000</color>
+<!--代表argb【alpha透明度（f代表不透明，0代表完全透明）】-->
+    <color name="color2">#f000</color>
+    <!-- rrggbb-->
+    <color name="color3">#ff00ff</color>
+    <!-- aarrggbb-->
+    <color name="color4">#80f33388</color>
+</resources>

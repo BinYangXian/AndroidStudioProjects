@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jkxy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<!--如何给下述View对象赋值:我们需要写一个自定义的命名空间（上述第二行），因为我们的属性是在我们当前的包名下面定义的，
+所以我们在使用这个属性的时候需要指明；然后在下边的绿色部分更改颜色-->
+    <com.jikexueyuan.learnrect.MyView android:layout_width="100dp"
+        android:layout_height="100dp"
+        jkxy:rect_color="#0f0"/>
+
+</LinearLayout>

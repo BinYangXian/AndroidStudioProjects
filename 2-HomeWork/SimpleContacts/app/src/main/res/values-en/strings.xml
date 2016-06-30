@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JikeContacts</string>
+    <string name="number_view">Telephone:</string>
+    <string name="Contact">Contact:</string>
+    <string name="add">Add</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="phone">Phone</string>
+    <string name="select">Select</string>
+    <string name="send_messages">Send Messages</string>
+</resources>

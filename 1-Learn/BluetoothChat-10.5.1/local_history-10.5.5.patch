@@ -1,0 +1,97 @@
+Index: app/src/main/java/com/jikexueyuan/bluetoothchat_1051/BluetoothConnection.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/jikexueyuan/bluetoothchat_1051/BluetoothConnection.java	(revision )
++++ app/src/main/java/com/jikexueyuan/bluetoothchat_1051/BluetoothConnection.java	(revision )
+@@ -2,6 +2,7 @@
+ 
+ import android.app.Activity;
+ import android.bluetooth.BluetoothAdapter;
++import android.bluetooth.BluetoothDevice;
+ import android.bluetooth.BluetoothServerSocket;
+ import android.bluetooth.BluetoothSocket;
+ import android.widget.Toast;
+@@ -76,7 +77,52 @@
+         }
+     }
+ 
+-    class ManageConnectionThread extends Thread { //AcceptThread侦听成功时，创建一个新的线程来管理连接
++    private void connect(BluetoothDevice device){
++        stopServerSocket();
++
++        new ConnectThread(device).start();
++    }
++
++    class ConnectThread extends Thread{  //因为连接也会阻塞当前线程，所以新建除UI线程外的第三个辅线程
++
++        private final BluetoothDevice decice;
++        private BluetoothSocket socket=null;
++
++        public ConnectThread(BluetoothDevice device) {
++            this.decice=device;
++
++            try {
++                socket = decice.createRfcommSocketToServiceRecord(MY_UUID);//创建一个连接服务器的通道,用的是同一个UUID。
++            } catch (IOException e) {
++                e.printStackTrace();
++            }
++        }
++
++        @Override
++        public void run() {
++
++            super.run();
++            if (socket==null){
++                return;
++            }
++
++            try {
++                socket.connect(); //可能会异常
++                manageConnection(socket); //如果有实例socket（蓝牙连接通道）存在，那么就调用manageConnection
++                // 通过ManageConnectionThread来管理该线程的使命就完成了。(该步骤一般不会发生异常)
++            } catch (IOException e) {
++                e.printStackTrace();
++                context.runOnUiThread(new Runnable() {
++                    @Override
++                    public void run() {
++                        Toast.makeText(context,"无法创建链接",Toast.LENGTH_SHORT).show();
++                    }
++                });
++            }
++        }
++    }
++
++    class ManageConnectionThread extends Thread { //AcceptThread侦听成功时，创建第二个辅线程来管理连接
+         private BluetoothSocket socket;
+         private InputStream in;
+         private OutputStream out;
+@@ -97,8 +143,8 @@
+                 String line = null;
+ 
+                 while ((line = br.readLine()) != null) {
+-                    if (getOnReadNewLineListener()!=null){
+-                        getOnReadNewLineListener().onRead(line); //通过接口通知给外界
++                    if (getOnReadNewLineListener()!=null){ //当调用获得的接口类型的onReadNewLineListener被实现时（既有实例监听者）
++                        getOnReadNewLineListener().onRead(line); //通过接口通知给外界，回调函数法
+                     }
+                 }
+             } catch (IOException e) {
+@@ -118,6 +164,7 @@
+         private void cancel() {
+             try {
+                 socket.close();
++                manageConnectionThread=null;
+             } catch (IOException e) {
+                 e.printStackTrace();
+             }
+@@ -134,7 +181,7 @@
+         }
+     }
+ 
+-    class AcceptThread extends Thread {  //内部类
++    class AcceptThread extends Thread {  //内部类，第一个辅线程
+         private BluetoothAdapter bluetoothAdapter;
+         private BluetoothServerSocket serverSocket = null;
+ 

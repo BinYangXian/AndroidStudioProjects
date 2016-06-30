@@ -1,0 +1,7 @@
+显示图片放大缩小移动效果，移动超出边框弹回的效果。
+
+需为此项目需要添加android包-android2.2
+
+添加方法：
+项目右键-build path-configure build path -
+（弹出对话框，左侧点android，右边勾选android2.2，apply，OK）

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">L04ScaleAnimation</string>
+    <string name="scale_me">Scale me</string>
+</resources>

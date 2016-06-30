@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="MyView"><!-- 指明自定义视图为MyRect-->
+        <attr name="rect_color" format="color" /><!-- 指明颜色的格式-->
+    </declare-styleable>
+</resources>

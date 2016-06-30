@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/favorite"
+        android:title="喜欢"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings"
+        android:title="设置"
+        app:showAsAction="never" />
+    <!-- 注意上述命名空间有的为app，而有的为android;ifRoom 如果有空间的话;collapseActionView 让菜单项是否消失并占据之；
+    actionViewClass 引用类的实例-->
+    <item
+        android:id="@+id/share"
+        app:showAsAction="never"
+        android:title="分享" app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="搜索"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+</menu>
