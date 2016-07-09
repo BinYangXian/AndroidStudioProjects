@@ -1,8 +1,7 @@
 package com.jikexueyuan.learnlayout;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ViewGroup;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -12,7 +11,6 @@ private RelativeLayout root;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_relative_layout_aty);
         root=new RelativeLayout(this);
         setContentView(root);
 

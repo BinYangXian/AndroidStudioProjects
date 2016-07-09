@@ -46,19 +46,19 @@ public class MainActivity extends AppCompatActivity {
 
 //        MenuItem menuItem = menu.findItem(R.id.search);//查找到相关按钮id
 //        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);//加载menuItem并赋值给searchView
-//        // 对象可以用之操作搜索结果、添加搜索内容等；下述是与main_layout.xml中collapseActionView属性配合的改写（
-// 增加了两回调用方法的执行！）：
+//        // 对象可以用之操作搜索结果、添加搜索内容等；下述是与 menu/main_layout.xml中collapseActionView属性配合的改写（
+// 可使下述两回调用方法在相关按钮点击时能被正常调用！）：
         MenuItem menuItem = menu.findItem(R.id.search);
         MenuItemCompat.setOnActionExpandListener(menuItem, new MenuItemCompat.OnActionExpandListener() {
             @Override
-            public boolean onMenuItemActionExpand(MenuItem item) {//当点击搜索按钮时，true 搜索栏展开/
+            public boolean onMenuItemActionExpand(MenuItem item) {//当点击搜索按钮时，如果为true 搜索栏展开/
             // false搜索栏不展开 并执行此法。
 
                 return true;
             }
 
             @Override
-            public boolean onMenuItemActionCollapse(MenuItem item) {//当点击按钮退出搜索时，true 搜索栏关闭/
+            public boolean onMenuItemActionCollapse(MenuItem item) {//当点击后退按钮退出搜索时，如果为true 搜索栏关闭/
             // false 搜索栏不关闭 并执行此法。
                 return true;
             }
@@ -87,7 +87,7 @@ switch (item.getItemId()){
     }
 
     public void intentOtherActivity(View view){//这里需要view这个参数，是因为我们是从main_layout.xml文件中调用此法(
-    //既是从main_layout对应的view中调用此法 )。
+    //既是从main_layout对应的view中调用此法，可以备用 )。
         startActivity(new Intent(this,OtherActivity.class));
     }
 }

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        animator.setTarget(v);
 //        animator.start();
         //3、xml文件配置属性动画集合:
-//        AnimatorSet animator = (AnimatorSet) AnimatorInflater.loadAnimator(this, R.animator.animte_me);
+//        AnimatorSet animator = (AnimatorSet) AnimatorInflater.loadAnimator(this, R.animator.animte_me_set);
 //        animator.setTarget(v);
 //        animator.start();
         //4、代码配置属性动画集合:

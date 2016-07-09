@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/balance"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="40dip"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/yue_check" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="余额查询"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reCharge"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/money_chong" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="话费充值"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/aboutus"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/aboutus" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="关于我们"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/accountSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/shezhi" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="账户设置"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_person_center_recommend"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/person_recommend" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="推荐给好友"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/helper"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/person_help" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="帮助反馈"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

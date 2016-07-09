@@ -26,13 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             lp.weight=1;
             root.addView(btnClickme,lp);
         }
-        //添加一个按钮方法：
+        //添加一个按钮的两种方法：
 //        root.addView(btnClickme);
-//        root.addView(btnClickme,LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+//        root.addView(btnClickme,LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);//方法1；
 //        先申明布局参数，根据参数添加子对象。
-//        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+//        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);//方法2；
 //        root.addView(btnClickme, lp);
-
     }
 
     @Override

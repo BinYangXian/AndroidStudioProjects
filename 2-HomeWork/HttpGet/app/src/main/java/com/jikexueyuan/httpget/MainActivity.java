@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
                     // 返回数据格式为json
 //                }.execute("http://fanyi.youdao.com/openapi.do?keyfrom=textHttplasdGet&key=1310740987&type=data&doctype=json&version=1.1&q=good ");
                     //返回数据格式为xml,q="要翻译的文本"，当然需要时英文才能正常翻译
-                }.execute("http://fanyi.youdao.com/openapi.do?keyfrom=textHttplasdGet&key=1310740987&type=data&doctype=xml&version=1.1&q=fuck");
+                }.execute("http://fanyi.youdao.com/openapi.do?keyfrom=textHttplasdGet&key=1310740987&type=data&doctype=xml&version=1.1&q=hello");
+                //http://networking.zju.edu.cn/zju/index.htmHTTP/1.0
 
             }
         });

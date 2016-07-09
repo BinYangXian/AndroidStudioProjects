@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/alipay_lib/alipay_lib.iml" filepath="$PROJECT_DIR$/alipay_lib/alipay_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cqxb/cqxb.iml" filepath="$PROJECT_DIR$/cqxb/cqxb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cqxb1.iml" filepath="$PROJECT_DIR$/cqxb1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyinSearch/pinyinSearch.iml" filepath="$PROJECT_DIR$/pinyinSearch/pinyinSearch.iml" />
+    </modules>
+  </component>
+</project>

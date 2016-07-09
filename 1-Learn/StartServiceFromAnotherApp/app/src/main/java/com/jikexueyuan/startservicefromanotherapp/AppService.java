@@ -32,7 +32,8 @@ public class AppService extends Service {
             }
 
             @Override
-            public void registCallback(TimerServiceCallback callback) throws RemoteException { //5、aidl回调函数-服务端：
+            public void registCallback(TimerServiceCallback callback) throws RemoteException { //此法是被anothreApp通过AppServiceRemoteBinder文件实现的接口回调，
+            // 也就是说registCallback抽象方法在另一个app中被调用，而其实现通过AIDL跳转到了本app！！！！//5、aidl回调函数-服务端：
                 callbackList.register(callback);
             }
 

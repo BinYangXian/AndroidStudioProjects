@@ -9,12 +9,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment);
-//        getSupportFragmentManager()可以支持老版本android 2 的视图动画；而
-// getFragmentManager()支持属性动画，效果几乎与上述相同
+//        getSupportFragmentManager()仅支持老版本android 2 的视图动画；而
+// getFragmentManager()支持属性动画，所以需要android 4.0及以上。
 
         getFragmentManager().beginTransaction().add(R.id.container, new FragmentMain()).commit();
     }
-//由于不是support 工具包中的fragment，所以需要在此处手动抛出后退栈区的fragment，实现单极后退动作
+//由于getFragmentManager方法得到的不是support v7工具包中的fragment，所以需要在此处手动抛出后退栈区的fragment，实现单极后退动作
     @Override
     public void onBackPressed() {
         if (getFragmentManager().getBackStackEntryCount()>0){

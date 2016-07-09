@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:id="@+id/g3g4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:layout_marginTop="40dip"
+        android:clickable="true">
+
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="去电是否显示本机号码"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            />
+        <CheckBox 
+            android:id="@+id/g3g4Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkcall"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/wifi"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:layout_marginTop="15dip"
+        android:clickable="true">
+
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拨号声音"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            />
+        <CheckBox 
+            android:id="@+id/wifiCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkcall"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/outCall"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:layout_marginTop="15dip"
+        android:clickable="true">
+
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="录音开关"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            />
+        <CheckBox 
+            android:id="@+id/outCallCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkcall"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/numberSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:layout_marginTop="15dip"
+        android:clickable="true">
+
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开门密码设置"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            />
+    </LinearLayout>
+
+</LinearLayout>

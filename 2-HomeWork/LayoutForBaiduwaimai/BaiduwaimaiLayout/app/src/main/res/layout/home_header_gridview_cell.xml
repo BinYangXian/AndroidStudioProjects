@@ -4,21 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/homeImageBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/homeTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/homeImageBtn"
+        android:layout_alignEnd="@+id/homeImage"
 
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/homeImageBtn"
-        android:layout_below="@+id/homeImageBtn"
+        android:layout_alignRight="@+id/homeImage"
+        android:layout_below="@+id/homeImage"
         android:gravity="center_horizontal" />
 
 </RelativeLayout>

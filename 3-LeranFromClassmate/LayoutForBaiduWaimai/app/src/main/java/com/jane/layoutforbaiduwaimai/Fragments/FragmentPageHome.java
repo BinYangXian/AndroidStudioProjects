@@ -105,7 +105,7 @@ public class FragmentPageHome extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-//        meumList = new ArrayList<>();
-//        mList = new ArrayList<>();
+        meumList = new ArrayList<>();
+        mList = new ArrayList<>();
     }
 }

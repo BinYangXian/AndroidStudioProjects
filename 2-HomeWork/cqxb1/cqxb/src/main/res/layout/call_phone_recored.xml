@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/cpr_contactImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/people" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/cpr_numLiner"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cpr_callNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="12345678910"
+                        android:textColor="@color/black"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" >
+
+                        <LinearLayout
+                            android:id="@+id/cpr_coming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal" >
+                            <TextView
+                                android:id="@+id/cpr_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:text=""
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:id="@+id/cpr_callType"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/icon_incoming_call" />
+
+                            <TextView
+                                android:id="@+id/cpr_callContext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="今天  13:12"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/cpr_contactDetail"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bianji" 
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/cpr_SIM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="right"
+                    android:text="手机"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:layout_marginRight="15dip"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

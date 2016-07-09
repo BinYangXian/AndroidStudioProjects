@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\Fragment_Roat3D\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\Fragment_Roat3D\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\Fragment_Roat3D\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\Fragment_Roat3D\\app\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\Fragment_Roat3D\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\Fragment_Roat3D\\app\\src\\main\\res\\layout\\fragment_first.xml"
+    }
+]

@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.ScaleAnimation;
 import android.widget.ArrayAdapter;
-//5 为列表添加布局动画效果
+//5 为列表添加布局动画效果,与添加Layout的动画效果同理，包括GridView等，因为它们都是View的子类。
 public class MainActivity extends ListActivity {
 
     private ArrayAdapter<String> adapter;

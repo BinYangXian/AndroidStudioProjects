@@ -3,9 +3,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent" android:layout_height="match_parent">
 <!--如何给下述View对象赋值:我们需要写一个自定义的命名空间（上述第二行），因为我们的属性是在我们当前的包名下面定义的，
-所以我们在使用这个属性的时候需要指明；然后在下边的绿色部分更改颜色-->
+所以jkxy:rect_color="#0f0"的使用，需要我们在使用这个属性的时候需要指明；然后可以据此更改rect的默认颜色0xffff0000变为#0f0-->
     <com.jikexueyuan.learnrect.MyView android:layout_width="100dp"
         android:layout_height="100dp"
-        jkxy:rect_color="#0f0"/>
+        jkxy:rect_color="#0f0"/><!--ff0000ff 蓝色-->
 
 </LinearLayout>

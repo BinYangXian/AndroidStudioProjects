@@ -20,13 +20,12 @@ public class MainActivity extends AppCompatActivity {
         for (int k=0;k<5;k++){
             rootHorizontal=new LinearLayout(this);
             rootHorizontal.setOrientation(LinearLayout.HORIZONTAL);
-            //勿忘，当lpHorizontal.weight=1;官方建议设置高度 LinearLayout.LayoutParams为0
-            LinearLayout.LayoutParams lpHorizontal=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,0);
+            //勿忘，当lpHorizontal.weight=1;官方建议设置 LinearLayout.LayoutParams的高度为0
+            LinearLayout.LayoutParams lpHorizontal=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,0);
 
-            lpHorizontal.weight=1;
             for (int i=1;i<5;i++){
                 Button button=new Button(this);
-                button.setText(4 * k + i+"");
+                button.setText(4 * k + i + "");
                 button.setBackgroundColor(Color.RED);
                 button.setTextColor(Color.WHITE);
                 LinearLayout.LayoutParams lpButton=new LinearLayout.LayoutParams(0,LinearLayout.LayoutParams.MATCH_PARENT);
@@ -34,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 lpButton.weight=1;
                 rootHorizontal.addView(button,lpButton);//勿忘
             }
+            lpHorizontal.weight=1;
             layout.addView(rootHorizontal,lpHorizontal);//勿忘
         }
     }

@@ -45,7 +45,12 @@ public class HomePageAdapter extends BaseAdapter {
             viewHolder.shop_sold_number = (TextView) convertView.findViewById(R.id.shop_sold_number);
             viewHolder.shop_extra_messages = (TextView) convertView.findViewById(R.id.shop_extra_messages);
             viewHolder.shops_image = (ImageView) convertView.findViewById(R.id.shops_image);
-
+            viewHolder.star_image[0] = (ImageView) convertView.findViewById(R.id.evaluated_star1);
+            viewHolder.star_image[1] = (ImageView) convertView.findViewById(R.id.evaluated_star2);
+            viewHolder.star_image[2] = (ImageView) convertView.findViewById(R.id.evaluated_star3);
+            viewHolder.star_image[3] = (ImageView) convertView.findViewById(R.id.evaluated_star4);
+            viewHolder.star_image[4] = (ImageView) convertView.findViewById(R.id.evaluated_star5);
+            viewHolder.totalHalfStar = getItem(position).getHalfStar();
             convertView.setTag(viewHolder);//ViewHolder的使用
 
         } else {
@@ -59,6 +64,13 @@ public class HomePageAdapter extends BaseAdapter {
         viewHolder.shop_sold_number.setText(item.getSoldNumber());
         viewHolder.shops_image.setImageResource(item.getShopImageId());
         viewHolder.shops_name.setText(item.getName());
+        int i;
+        for (i = 0; i < viewHolder.totalHalfStar / 2; i++) {
+            viewHolder.star_image[i].setImageResource(R.drawable.businesslistings_list_icon_star_full);
+        }
+        if (viewHolder.totalHalfStar % 2 != 0) {
+            viewHolder.star_image[i].setImageResource(R.drawable.businesslistings_list_icon_star_half);
+        }
 
         return convertView;
     }
@@ -80,7 +92,8 @@ public class HomePageAdapter extends BaseAdapter {
     private static class CustomListCellViewHolder {//需要是static，这样的成员内部类是属于该类的，使用时不会重复分配内存
         private TextView shops_name, shop_sold_number, shop_extra_messages, shop_distance;
         private ImageView shops_image;
-//        private ArrayList<ImageView> star_image=new ArrayList<>();
+        private int totalHalfStar;
+        private ImageView star_image[] = new ImageView[5];
     }
 
 }

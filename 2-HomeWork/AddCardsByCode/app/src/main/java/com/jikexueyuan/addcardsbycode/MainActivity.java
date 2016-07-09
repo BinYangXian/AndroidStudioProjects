@@ -8,39 +8,32 @@ import android.widget.LinearLayout;
 
 //用代码控制子对象
 public class MainActivity extends AppCompatActivity {
-    private LinearLayout  rootMain,rootHorizontal;
-    private Button btnClickme;
+
+    private LinearLayout root, horizontalLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        rootMain = new LinearLayout(this);
-        rootMain.setOrientation(LinearLayout.VERTICAL);
-        setContentView(rootMain);
+        root = new LinearLayout(this);
+        root.setOrientation(LinearLayout.VERTICAL);
+        setContentView(root);//此话在上两句话之后
 
-
-        for (int k = 0; k < 5; k++) {
-
-            rootHorizontal = new LinearLayout(this);
-            rootHorizontal.setOrientation(LinearLayout.HORIZONTAL);
-            LinearLayout.LayoutParams lpHorizontal = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0);
-            lpHorizontal.weight = 1;
-
+        for (int i = 0; i < 5; i++) {
+            horizontalLayout = new LinearLayout(this);
+            horizontalLayout.setOrientation(LinearLayout.HORIZONTAL);
+            LinearLayout.LayoutParams horizontalLp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0);//
             for (int j = 0; j < 4; j++) {
-                btnClickme = new Button(this);
-                btnClickme.setText("" + (4 * k + j + 1));
-                btnClickme.setBackgroundColor(Color.RED);
-                btnClickme.setTextColor(Color.WHITE);
-                LinearLayout.LayoutParams lpButton = new LinearLayout.LayoutParams(0,LinearLayout.LayoutParams.MATCH_PARENT);
-              lpButton.leftMargin=10;
-                lpButton.rightMargin=10;
-                lpButton.topMargin=10;
-                lpButton.bottomMargin=10;
-                lpButton.weight = 1;
-
-                rootHorizontal.addView(btnClickme, lpButton);
+                Button button = new Button(this);
+                button.setBackgroundColor(Color.RED);
+                button.setText(i * 4 + j + 1 + "");
+                button.setTextColor(Color.WHITE);
+                LinearLayout.LayoutParams buttonLp = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT);
+                buttonLp.setMargins(10, 10, 10, 10);
+                buttonLp.weight = 1;
+                horizontalLayout.addView(button,buttonLp);
             }
-            rootMain.addView(rootHorizontal,lpHorizontal);
+            horizontalLp.weight = 1;
+            root.addView(horizontalLayout,horizontalLp);
         }
     }
 

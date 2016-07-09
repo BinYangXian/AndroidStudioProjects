@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                             BufferedWriter bw=new BufferedWriter(osw);
                             //请求数据，注意去句首"?"号
                             bw.write("keyfrom=textHttplasdGet&key=1310740987&type=data&doctype=xml&version=1.1&q=good");
+
                             bw.flush(); //手动冲刷出缓存中数据，以防输出不完整。
                             //读取数据
                             InputStream is = connection.getInputStream();

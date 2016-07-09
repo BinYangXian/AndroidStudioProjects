@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/shops_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:contentDescription="店铺标志" />
 
     <LinearLayout
@@ -20,39 +20,48 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
 
             <TextView
                 android:id="@+id/shops_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/shops_name">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_alignRight="@+id/centerImageView"
+
+                    android:layout_marginRight="20dp"
                     android:contentDescription="减"
                     android:src="@drawable/waimai_shoplist_item_icon_jian" />
 
-                <ImageButton
+                <ImageView
+                    android:id="@+id/centerImageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
                     android:contentDescription="券"
                     android:src="@drawable/waimai_shoplist_item_icon_juan" />
 
-                <ImageButton
+                <ImageView
+                    android:id="@+id/mian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_alignLeft="@+id/centerImageView"
+                    android:layout_marginLeft="20dp"
                     android:contentDescription="免"
                     android:src="@drawable/waimai_shoplist_item_icon_mian" />
-            </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -63,35 +72,35 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/shou_star1"
+                android:id="@+id/evaluated_star1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="第1星"
                 android:src="@drawable/businesslistings_list_icon_star_no" />
 
             <ImageView
-                android:id="@+id/shou_star2"
+                android:id="@+id/evaluated_star2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="第2星"
                 android:src="@drawable/businesslistings_list_icon_star_no" />
 
             <ImageView
-                android:id="@+id/shou_star3"
+                android:id="@+id/evaluated_star3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="第3星"
                 android:src="@drawable/businesslistings_list_icon_star_no" />
 
             <ImageView
-                android:id="@+id/shou_star4"
+                android:id="@+id/evaluated_star4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="第4星"
                 android:src="@drawable/businesslistings_list_icon_star_no" />
 
             <ImageView
-                android:id="@+id/shou_star5"
+                android:id="@+id/evaluated_star5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="第5星"

@@ -94,13 +94,14 @@ public class SliderActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         } else if (id == R.id.nav_web) {
-            //这里的选项点击后加载的容器类是DrawerLayout其布局资源是（R.id.drawer_layout）
-            getSupportFragmentManager().beginTransaction().add(R.id.drawer_layout,new JikexueyuanWebViewFragment()).addToBackStack(null).commit();
+            //这里的选项点击后加载的容器类是DrawerLayout其布局资源是（R.id.drawer_layout）;
+//            getSupportFragmentManager().beginTransaction().add(R.id.drawer_layout,new JikexueyuanWebViewFragment()).addToBackStack(null).commit();//初步试验与下没差
+            getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,new JikexueyuanWebViewFragment()).addToBackStack(null).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);//创建布局容器drawer对象，
-        // 并且与布局资源关联。？？？？？？？？
-        drawer.closeDrawer(GravityCompat.START);//？？？？？？？？？
+        // 并且与布局资源关联。？？？？？？？？暂时不可知
+        drawer.closeDrawer(GravityCompat.START);//？？？？？？？？？暂时不可知
         return true;
     }
 }

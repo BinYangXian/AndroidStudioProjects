@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -25,6 +26,7 @@ public class HomePageFragment extends Fragment {
     private List<HashMap<String, Object>> gridViewList= new ArrayList<>();; //布局头部的表格布局所需的元素集合
     private SimpleAdapter adapter;
     private GridView homeHeaderGridview;
+    private ImageButton firstImaBtn,fifthImaBtn;
 
     public HomePageFragment() {
         //主页列表数据添加
@@ -34,8 +36,9 @@ public class HomePageFragment extends Fragment {
         //主页布局头部的表格布局数据添加
         String[] textView = {"餐饮", "水果", "药店", "新店", "土豪", "下午茶", "超市购", "快送"};
         int[] imageView = {R.drawable.eat, R.drawable.fruit, R.drawable.medicine, R.drawable.newdian, R.drawable.tuhao, R.drawable.tea, R.drawable.buy, R.drawable.deliver};
+        HashMap<String, Object> gridViewMap;
         for (int i = 0; i < imageView.length; i++) {
-            HashMap<String, Object> gridViewMap = new HashMap<>();
+            gridViewMap= new HashMap<>();
             gridViewMap.put("textView", textView[i]);
             gridViewMap.put("imageView", imageView[i]);
             gridViewList.add(gridViewMap);
@@ -54,11 +57,12 @@ public class HomePageFragment extends Fragment {
         View headerView = inflater.inflate(R.layout.home_header_gridview, null);
         homeHeaderGridview = (GridView) headerView.findViewById(R.id.homeHeaderGridview);
         shops_lv.addHeaderView(headerView);
-        //数据适配：1、表格头部布局的单条数据适配方法 2、表格头部布局整体数据适配;3、列表数据的适配
-        adapter = new SimpleAdapter(getContext(), gridViewList, R.layout.home_header_gridview_cell, new String[]{"textView", "imageView"}, new int[]{R.id.homeTv, R.id.homeImageBtn});
+        //数据适配，下三句作用：1、表格头部布局的单条数据适配方法 2、表格头部布局整体数据适配;3、列表数据的适配
+        adapter = new SimpleAdapter(getContext(), gridViewList, R.layout.home_header_gridview_cell, new String[]{"textView", "imageView"}, new int[]{R.id.homeTv, R.id.homeImage});
         homeHeaderGridview.setAdapter(adapter);
         shops_lv.setAdapter(new HomePageAdapter(shopMessages, getContext()));
 
+//        firstImaBtn=rootView.findViewById(R.id.)
         return rootView;
     }
 

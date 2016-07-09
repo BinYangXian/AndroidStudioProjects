@@ -1,8 +1,8 @@
 package com.jikexueyuan.usingasynctask;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -11,7 +11,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Arrays;
@@ -51,15 +50,13 @@ public class MainActivity extends AppCompatActivity {
                     StringBuilder builder=new StringBuilder();
                     while ((line=br.readLine())!=null){
                         builder.append(line);
-                        publishProgress((float)(builder.length() /total));//计算并发布task的进度
+                        publishProgress((float)(builder.length() /total));//计算并发布task的进度,供给onProgressUpdate回调方法用
                     }
                     br.close();
                     isr.close();
                     iStream.close();
-                    return builder.toString(); //将builder转换为字符串返回，之后AsyncTask匿名对象会自动调用回调方法
-                    // （在第60-84行），完成后续操作
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
+                    return builder.toString(); //将builder转换为字符串返回给onPostExecute回调方法用，之后AsyncTask匿名对象会自动
+                    // 调用回调方法（总共五个，此处仅使用了三个），完成后续操作。
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

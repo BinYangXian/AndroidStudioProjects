@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:id="@+id/systemCharge"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:layout_marginTop="40dip"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/chongzhika" 
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"/>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="系统卡充值"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_next" 
+            android:layout_gravity="center"
+            android:layout_marginRight="20dip"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/zhifubao"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        android:layout_marginTop="15dip"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/zhifubao" 
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"/>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支付宝快捷支付"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_next" 
+            android:layout_gravity="center"
+            android:layout_marginRight="20dip"/>
+    </LinearLayout>
+</LinearLayout>

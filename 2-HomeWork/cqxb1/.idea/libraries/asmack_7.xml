@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="asmack-7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cqxb/libs/asmack-7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
