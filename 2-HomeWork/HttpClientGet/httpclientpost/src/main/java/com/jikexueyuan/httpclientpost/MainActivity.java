@@ -2,7 +2,6 @@ package com.jikexueyuan.httpclientpost;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -56,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             protected String doInBackground(String... params) {//params[0]就是url,params[1]是in。也是
             // AsyncTask()的第一个参数的类型。
                 String urlString = params[0];
-                Log.i("params[0]=",params[0]);
-                Log.i("params[1]=",params[1]);
+//                Log.i("params[0]=",params[0]);
+//                Log.i("params[1]=",params[1]);
                 HttpPost post=new HttpPost(urlString);
                 /* StringEntity entity=new StringEntity(params[1]);
                  post.setEntity(entity); //post方法发送内容包HttpEntity对象；其非表单类型，

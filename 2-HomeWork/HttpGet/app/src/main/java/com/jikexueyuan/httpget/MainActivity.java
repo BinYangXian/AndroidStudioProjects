@@ -1,9 +1,8 @@
 package com.jikexueyuan.httpget;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.io.BufferedReader;
@@ -13,6 +12,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+
 /*版本：1.1，请求方式：get，编码方式：utf-8
 
 主要功能：中英互译，同时获得有道翻译结果和有道词典结果（可能没有）
@@ -55,35 +55,36 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AsyncTask<String, Void, Void>() {
+               new AsyncTask<String ,Object,Object>(){
+                   @Override
+                   protected Object doInBackground(String... params) {
+                       try {
+                           URL url=new URL(params[0]);
+                           URLConnection urlConnection=url.openConnection();
+                           InputStream inputStream=urlConnection.getInputStream();
+                           InputStreamReader inputStreamReader=new InputStreamReader(inputStream);
+                           BufferedReader bufferedReader=new BufferedReader(inputStreamReader);
+                           String line;
+                           while ((line=bufferedReader.readLine())!=null){
+                               System.out.println(line+"\n");
+                           }
 
-                    @Override
-                    protected Void doInBackground(String... params) {
-                        try {
-                            URL url = new URL(params[0]);
-                            Log.i("params[0]=", params[0]);
-                            URLConnection connection = url.openConnection();
-                            InputStream is = connection.getInputStream();
-                            InputStreamReader isr = new InputStreamReader(is, "utf-8");
-                            BufferedReader br = new BufferedReader(isr);
-                            String line;
-                            while ((line = br.readLine()) != null) {
-                                System.out.println(line + "\n");
-                            }
-                            br.close();
-                            isr.close();
-                            is.close();
-                        } catch (MalformedURLException e) {
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        return null;
-                    }
-                    // 返回数据格式为json
+                           bufferedReader.close();
+                           inputStreamReader.close();
+                           inputStream.close();
+                       } catch (MalformedURLException e) {
+                           e.printStackTrace();
+                       } catch (IOException e) {
+                           e.printStackTrace();
+                       }
+
+                       return null;
+                   }
+
+                   // 返回数据格式为json
 //                }.execute("http://fanyi.youdao.com/openapi.do?keyfrom=textHttplasdGet&key=1310740987&type=data&doctype=json&version=1.1&q=good ");
                     //返回数据格式为xml,q="要翻译的文本"，当然需要时英文才能正常翻译
-                }.execute("http://fanyi.youdao.com/openapi.do?keyfrom=textHttplasdGet&key=1310740987&type=data&doctype=xml&version=1.1&q=hello");
+                }.execute("http://fanyi.youdao.com/openapi.do?keyfrom=textHttplasdGet2&key=1978264983&type=data&doctype=xml&version=1.1&q=hello");
                 //http://networking.zju.edu.cn/zju/index.htmHTTP/1.0
 
             }
